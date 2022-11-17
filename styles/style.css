@@ -10,6 +10,127 @@
   padding: 0;
 }
 
+body {
+  background-color: hsl(204deg, 43%, 93%);
+  font-family: Karla, "sans-serif";
+  padding-top: 8.4112149533vh;
+  padding-bottom: 7.2429906542vh;
+  padding-inline: 2rem;
+}
+
+main {
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.section-top {
+  background-color: white;
+  padding: 1.75rem 1.5rem 2rem;
+}
+.section-top h1 {
+  font-size: 1.25rem;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  color: hsl(179deg, 62%, 43%);
+  margin-bottom: 1.2em;
+}
+.section-top h2 {
+  font-size: 0.9375rem;
+  line-height: 1.3333333333;
+  font-weight: 700;
+  letter-spacing: -0.1875px;
+  color: hsl(71deg, 73%, 54%);
+  margin-bottom: 1.0666666667em;
+}
+.section-top p {
+  font-size: 0.875rem;
+  line-height: 1.8571428571;
+  font-weight: 400;
+  letter-spacing: -0.175px;
+  color: hsl(218deg, 22%, 67%);
+}
+
+.section-middle {
+  background-color: hsl(179deg, 62%, 43%);
+  padding: 1.5rem;
+  color: white;
+}
+.section-middle h2 {
+  font-size: 1.125rem;
+  line-height: 1.1666666667;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.section-middle p {
+  font-size: 1rem;
+  line-height: 1.625;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  margin-bottom: 1.625em;
+}
+.section-middle .sub-fee {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+.section-middle .price {
+  font-size: 2rem;
+  line-height: 1.15625;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-right: 0.6875rem;
+}
+.section-middle .per-month {
+  opacity: 0.5;
+}
+.section-middle button {
+  width: 100%;
+  border: 0;
+  background-color: hsl(71deg, 73%, 54%);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.1875;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: white;
+  padding-block: 0.9375rem 0.875rem;
+  cursor: pointer;
+}
+.section-middle button:active {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.0973011);
+  translate: 0 2px;
+}
+
+.section-bottom {
+  background-color: hsl(179deg, 62%, 43%);
+}
+.section-bottom h2 {
+  font-size: 1.125rem;
+  line-height: 1.1666666667;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.section-bottom ul {
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
+  font-weight: 400;
+  letter-spacing: -0.175px;
+  opacity: 0.75;
+}
+
+.bottom__bg-overlay {
+  background-color: hsla(0deg, 0%, 100%, 0.15);
+  padding: 1.5rem;
+  color: white;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

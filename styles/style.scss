@@ -2,6 +2,120 @@
 
 @include setup;
 
+body {
+  background-color: color(light-gray);
+  font-family: $font-karla;
+  padding-top: div(72, 856) * 100vh;
+  padding-bottom: div(62, 856) * 100vh;
+  padding-inline: rem(32px);
+}
+
+main {
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.section-top {
+  background-color: white;
+  padding: rem(28px) rem(24px) rem(32px);
+
+  h1 {
+    @include setFont(rem(20px), 23px, 700);
+    letter-spacing: -0.25px;
+    color: color(cyan);
+    margin-bottom: em(24px, 20px);
+  }
+
+  h2 {
+    @include setFont(rem(15px), 20px, 700);
+    letter-spacing: -0.1875px;
+    color: color(bright-yellow);
+    margin-bottom: em(16px, 15px);
+  }
+
+  p {
+    @include setFont(rem(14px), 26px, 400);
+    letter-spacing: -0.175px;
+    color: color(grayish-blue);
+  }
+}
+
+.section-middle {
+  background-color: color(cyan);
+  padding: rem(24px);
+  color: white;
+
+  h2 {
+    @include setFont(rem(18px), 21px, 700);
+    margin-bottom: em(18px, 18px);
+  }
+
+  p {
+    @include setFont(rem(16px), 26px, 400);
+    letter-spacing: -0.2px;
+    margin-bottom: em(26px, 16px);
+  }
+
+  .sub-fee {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(4px);
+  }
+
+  .price {
+    @include setFont(rem(32px), 37px, 700);
+    letter-spacing: -0.4px;
+    margin-right: rem(11px);
+  }
+
+  .per-month {
+    opacity: 0.5;
+  }
+
+  button {
+    width: 100%;
+    border: 0;
+    background-color: color(bright-yellow);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+    border-radius: 5px;
+    @include setFont(rem(16px), 19px, 700);
+    letter-spacing: -0.2px;
+    color: white;
+    padding-block: rem(15px) rem(14px);
+    cursor: pointer;
+    &:active {
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.0973011);
+      translate: 0 2px;
+    }
+  }
+}
+
+.section-bottom {
+  background-color: color(cyan);
+
+  h2 {
+    @include setFont(rem(18px), 21px, 700);
+    margin-bottom: em(18px, 18px);
+  }
+
+  ul {
+    @include setFont(rem(14px), 20px, 400);
+    letter-spacing: -0.175px;
+    opacity: 0.75;
+  }
+}
+
+.bottom__bg-overlay {
+  background-color: hsla(0, 0%, 100%, 0.15);
+  padding: rem(24px);
+  color: white;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
